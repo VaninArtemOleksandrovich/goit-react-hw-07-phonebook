@@ -15,7 +15,7 @@ export const ContactForm = () => {
 
   const handleAddContact = (name, phone) => {
     return contacts?.find(contact => contact.name === name)
-      ? alert(`${name} is already in contacts`)
+      ? alert(`${name} is already in contacts!`)
       : dispatch(
           addContacts({
             id: nanoid(),
